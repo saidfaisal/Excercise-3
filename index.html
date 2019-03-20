@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body data-spy="scroll" data-target="#header" data-offset="100">
+    
+    <!-- Header -->
+    <header class="navbar navbar-dark bg-info sticky-top" id="header">  
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-nav">
+        <nav class="navbar-toggler-icon"></nav>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-nav">
+        <ul class="navbar-nav p-3 bg-light dropdown-nav">
+          <h5>My Social Media</h5>
+          <li><a class="nav-item nav-link text-secondary" href="#"><small class="font-weight-bold">Facebook</small><img src="images/facebook.png" class="social-media float-right"></a></li>
+          <li><a class="nav-item nav-link text-secondary" href="#"><small class="font-weight-bold">Telegram</small><img src="images/telegram.png" class="social-media float-right"></a></li>
+          <li><a class="nav-item nav-link text-secondary" href="#"><small class="font-weight-bold">Github</small><img src="images/github.png" class="social-media float-right"></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main-->
+    <main class="container-fluid">
+      <div class="container mt-3">
+        <h1>Planet Details</h1>
+        
+        <button class="btn btn-warning btn-search text-light" onclick="search()">Search</button>
+        <input type="text" class="form-control w-25" id="input-value">
+        <select id="custom-sel" class="custom-select w-25">
+          <option>2017</option>
+          <option>2018</option>
+        </select>
+        <table class="table table-bordered rounded table-striped table-light table-hover table-responsive">
+          <thead>
+            <tr>
+              <th>No</th><th class="w-25">Name</th><th>Rotation Period</th><th>Orbital Period</th><th>Diameter</th><th>Climate</th><th>Gravity</th><th>Terrain</th><th>Population</th><th>Residents</th><th>Films</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+          </div>
+        </table>
+      </div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="container-fluid bg-info text-center p-2 mt-2">
+        <h6 class="text-light text-center font-weight-bold">Copyright 2019&copy; Design by Me</h5>
+    </footer>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/swapi.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
